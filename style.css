@@ -1,0 +1,157 @@
+  *
+  {
+    box-sizing: border-box;
+  }
+  :root
+  {
+    /*colour palette*/
+     --color-primary: #107ea2;
+     --color-primary-hover: #74d8f7a9;
+     --color-text: #2b505ee6;
+     --color-text-muted: #696a7e;
+    --color-bg:#e5eced7d;
+    --color-bg-alt:#cde6f068;
+    --color-border:#b494aa99;
+     
+
+    /*fonts typography*/
+     --font-sans: 'Inter',system-ui,-apple-system, sans-serif;
+
+    /*shapes*/
+         --radius:12px;
+    --shadow:0 4px 12px rgb(0 0 0 / 0.08);
+
+
+    /*animation motion*/
+        --transition:0.15s ease;
+
+  }
+body
+{
+    margin:0;
+    font-family:var(--font-sans);
+    font-size:1rem;
+    line-height:1.5;
+    color:var(--color-text);
+    background-color: var(--color-bg);
+    padding: 32px 16px;
+}
+
+h1
+{
+    font-size:2rem;
+    font-weight:700;
+    margin: 16px 0 8px;
+    color:var(--color-primary);
+}
+h2
+{
+    font-size:1.25rem;
+    font-weight:600;
+    margin: 0 0 12px;
+}
+p{
+  margin: 0 0 16px;
+  max-width:60ch;
+
+ }
+.site-header,
+.site-footer
+{
+    text-align:center;
+    padding: 16px 0;
+    color:var(--color-text-muted);
+}
+.brand
+{
+    font-weight:700;
+    color:var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+main
+{
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+    max-width:800px;
+    margin:0 auto;
+}
+.profile
+{
+    background: white;
+    padding: 24px;
+    border:1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align:center;
+
+}
+.profile-avatar
+{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  box-shadow: var(--shadow);
+}
+.profile .tagline{
+  color:var(--color-text-muted);
+  margin:0 auto; 
+
+}
+.hobbies ul
+{
+    list-style:inside disc;
+    padding-left:16px;
+}
+.hobbies li{
+  padding :8px 12px;
+  border-radius: 6px;
+}
+.hobbies li:nth-of-type(odd) {
+  background: var(--color-bg-alt);
+}
+.contact .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: white;
+  text-align:center;
+}
+.social-links a{
+display:inline-block;
+color: var(--color-text);
+padding: 8px 16px;
+text-decoration: none;
+border-radius: var(--radius);
+margin:0 8px;
+transition: color 0.15s,background 0.15s;
+
+}
+.social-links a:hover {
+  color:var(--color-primary);
+  background: var(--color-bg-alt);
+}
+.theam-dark
+{
+  --color-primary: #107ea2;
+     --color-primary-hover: #74d8f7a9;
+     --color-text: #2b505ee6;
+     --color-text-muted: #696a7e;
+    --color-bg:#e5eced7d;
+    --color-bg-alt:#cde6f068;
+    --color-border:#b494aa99;
+}
+.theme-dark .profile,
+.theme-dark .hobbies {
+background: var(--color-bg-alt);
+
+}
+.site-footer
+{
+    text-align:center;
+    padding: 16px 0;
+    color:var(--color-text-muted);
+    margin-top: 20px;
+}
